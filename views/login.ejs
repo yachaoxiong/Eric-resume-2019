@@ -1,0 +1,27 @@
+<% include shared/header2.ejs %>
+<% if (messages.length > 0) { %>
+    <div class="alert alert-danger"><%= messages %></div>
+    <% }%>
+        <div class="container " style="text-align: center;">
+
+        <div class="eric-contanct-body animated bounceInLeft">
+        <h1 class="eric-h1-reg">LOGIN</h1>
+
+    <form method="post">
+        <fieldset class="form-group">
+        <label for="username" class="col-sm-2 control-label">Username: *</label>
+        <input name="username" id="username" required />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password: *</label>
+            <input name="password" id="password" type="password" required />
+        </fieldset>
+
+        <button class="btn eric-normal-btn">Login</button>
+        <a href="/google"><img src="/images/google.png" alt="Google Sign In" /></a>
+        <hr />
+        Need access?  <a href="/register" title="Register">Register</a>
+</form>
+    </div>
+</div>
+<% include shared/footer.ejs %>

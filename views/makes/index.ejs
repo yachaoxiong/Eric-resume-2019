@@ -1,0 +1,38 @@
+<%include ../shared/header2%>
+<div class="container eric-container-all" style="text-align: center;">
+
+    <div class="eric-contanct-body animated fadeIn ">
+        <h1 class="eric-h1-reg">Manufacturers</h1>
+        <%if(user){%>
+<a class="btn eric-normal-btn" href="/makes/add">Add a Manufacturer</a>
+        <%}%>
+</br>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Year</th>
+        <%if(user){%>
+        <th>Actions</th>
+        <%}%>
+    </tr>
+    <%for(let i=0; i< makes.length;i++){%>
+    <tr>
+        <td><%=makes[i].name%></td>
+        <td><%=makes[i].country%></td>
+        <td><%=makes[i].year%></td>
+        <%if(user){%>
+        <td>
+            <a class="btn eric-info-btn" href="/makes/edit/<%= makes[i]._id %>">EDIT</a>
+            <a class="btn eric-dg-btn" href="/makes/delete/<%= makes[i]._id%>"
+               onclick="return confirm('Are you sure you want to delete this? ')">DELETE</a>
+        </td>
+        <%}%>
+
+    </tr>
+
+    <%}%>
+</table>
+    </div>
+</div>
+<%include ../shared/footer%>

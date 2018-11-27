@@ -1,0 +1,25 @@
+<%include ../shared/header2%>
+<div class="container eric-container-all " style="text-align: center;">
+
+    <div class="eric-contanct-body animated bounceInLeft ">
+        <h1 class="eric-h1-reg">Make details</h1>
+
+<form method="post" >
+    <fieldset class="form-group">
+        <label class="control-label col-md-2" for="name">Make: *</label>
+        <input name="name" id="name" required value="<%= make.name%>"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-2" for="country">Country: *</label>
+        <input name="country" id="country" required value="<%= make.country%>"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-2"for="year">Year: *</label>
+        <input name="year" id="year" required value="<%=make.year%>"/>
+    </fieldset>
+
+    <button class="btn eric-normal-btn">Save</button>
+</form>
+    </div>
+</div>
+<%include ../shared/footer%>

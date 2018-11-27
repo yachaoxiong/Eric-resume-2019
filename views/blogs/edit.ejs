@@ -1,0 +1,38 @@
+    <%include ../shared/header2%>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="http://localhost:3000/Blogs">Blogs</a></li>
+        <li class="breadcrumb-item active" aria-current="page">EDIT</li>
+    </ol>
+<div class="container " style="text-align: center;">
+    <div class="eric-contanct-body animated fadeIn eric-container-all">
+        <h1 class="eric-h1-reg">Edit Page</h1>
+         <form method="post" >
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="blogtitle">Blogtitle: *</label>
+                    <input class="eric-blog-input" name="blogtitle" id="blogtitle" value="<%= blog.blogtitle%>" required/>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="subtitle">Subtitle: *</label>
+                    <input class="eric-blog-input" name="subtitle" id="subtitle" value="<%= blog.subtitle%>" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2"for="blogcontent">Blogcontent: *</label>
+                    <textarea class="eric-blog-input" name="blogcontent" rows="5" id="blogcontent"><%=blog.blogcontent%></textarea>
+                </fieldset>
+                <fieldset class="form-group"style="display: none;">
+                    <label class="control-label col-md-2" for="createTime">createTime: *</label>
+                    <input name="createAt" id="createAt"  value="<%=blog.createAt%>" required />
+                </fieldset>
+                <fieldset class="form-group"style="display: none;">
+                    <label class="control-label col-md-2" for="updateAt">updateTime: *</label>
+                    <input name="updateAt" id="updateAt" value="<%= blog.updateAt%>" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="pic">Pic: *</label>
+                    <input class="eric-blog-input" name="pic" id="pic" value="<%= blog.pic%>" required />
+                </fieldset>
+                <button class="btn eric-normal-btn">CHANGE</button>
+         </form>
+    </div>
+</div>
+<%include ../shared/footer%>

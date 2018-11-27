@@ -1,0 +1,32 @@
+<%include ../shared/header2%>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="http://localhost:3000/Blogs">Blogs</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ADD A NEW BLOG</li>
+        </ol>
+    </nav>
+<div class="container eric-container-all " style="text-align: center;">
+    <div class="eric-contanct-body animated fadeIn ">
+        <h1 class="eric-h1-reg">PULISH A BLOG</h1>
+            <form method="post" >
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="blogtitle">Blogtitle: *</label>
+                    <input class="eric-blog-input" name="blogtitle" id="blogtitle" required/>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="subtitle">Subtitle: *</label>
+                    <input class="eric-blog-input" name="subtitle" id="subtitle" required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2"for="blogcontent">Blogcontent: *</label>
+                    <textarea class="eric-blog-input" name="blogcontent" rows="5"id="blogcontent"></textarea>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="control-label col-md-2" for="pic">Pic: *</label>
+                    <input class="eric-blog-input" name="pic" id="pic" required />
+                </fieldset>
+            <button class="btn eric-normal-btn">Save</button>
+        </form>
+    </div>
+</div>
+<%include ../shared/footer%>

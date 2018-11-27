@@ -1,0 +1,55 @@
+<% include shared/header2.ejs %>
+
+<% if (message.length > 0) { %>
+<div class="alert alert-info"><%= message %></div>
+<% }%>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="http://localhost:3000/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+    </ol>
+</nav>
+<div class="container">
+
+    <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+            <h3 style="color: white;">WEB DESIGN</h3>
+
+            <ul style="color: white;">
+                <li><i class="fa fa-user-secret"></i> Web Developer</li>
+                <li><i class="fa fa-phone"></i> (705) 796-4276</li>
+                <li><i class="fa fa-envelope"></i> ericxiongyachao@gmail.com</li>
+            </ul>
+        </div>
+        <div class="contact ">
+            <h3>Email ME</h3>
+            <form method="post">
+
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company">
+                </p>
+                <p>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                </p>
+                <p class="full">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="5"id="message"></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit" class="btn eric-normal-btn eric-res-btn">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+<% include shared/footer.ejs %>

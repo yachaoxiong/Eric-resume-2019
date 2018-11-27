@@ -1,0 +1,29 @@
+
+
+
+<%include ../shared/header2%>
+
+
+<%if(user){%>
+<a class="btn eric-normal-btn" href="/blogs/add">Add a new Blog</a>
+<%}%>
+<div class="container">
+    <div class="eric-row" >
+        <%for(let i=0; i< blogs.length;i++){%>
+        <div class="col">
+            <a style=" Text-Decoration: None !important; " href="/blogs/blogdetails/<%=blogs[i]._id%>">
+                <div class="eric-card card" >
+
+                    <img class="eric-card-img" style="max-width:100%;" src="/images/<%=blogs[i].pic%>" >
+
+                    <div class="card-body">
+                        <p class="card-text"><%=blogs[i].blogtitle%></p>
+                        <p class="postedTime">Posted: <%=cds[i]%></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <%}%>
+    </div>
+</div>
+<%include ../shared/footer%>
