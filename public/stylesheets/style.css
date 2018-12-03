@@ -52,7 +52,14 @@ footer {
 .row{
   padding-left: 5%;
   padding-right: 5%;
+
 }
+/*.row-bg{
+  background-image: url("../images/bt.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}*/
 .eric-reverse-row{
   flex-wrap: wrap-reverse !important;
 }
