@@ -49,6 +49,49 @@ router.get('/',(req,res,next)=>{
     });
 
 });
+//get:/blog/test
+router.get('/test',(req,res,next)=>{
+
+    //get blog documents form db
+    Blog.find((err,blogs)=> {
+        //creat a variable and empty array
+        let months = new Date();
+        let uptime= new Date();
+        let cds=[];
+        let uds=[];
+
+        //get the date format
+        for(let i=0; i< blogs.length;i++){
+            //date == create time
+            months= blogs[i].createAt;
+            uptime=blogs[i].updateAt;
+
+            cds[i]=date.format(months,'YYYY/MM/DD HH:mm:ss');
+            cds.push(cds[i]);
+            uds[i]=date.format(uptime,'YYYY/MM/DD HH:mm:ss');
+            uds.push(uds[i]);
+
+        }
+        if(err){
+
+            console.log(err);
+        }
+        else{
+            res.render('blogs/test',{
+                title:'Blog List',
+
+                blogs: blogs,
+
+                user:req.user,
+
+                cds,
+                uds
+            })
+        }
+
+    });
+
+});
 //get:/ blogs/add
 router.get('/add',functions.isLoggedIn,(req,res,next)=>{
     res.render('blogs/add',{
@@ -152,11 +195,6 @@ router.get('/blogdetails/:_id',(req,res,next)=>{
     //convert the date format
     let month1 = new Date();
     let month2=new Date();
-
-
-
-
-
 
     //use the car model to find the selected document
     Blog.findById(_id,(err,blog)=>{

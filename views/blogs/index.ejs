@@ -1,26 +1,38 @@
 <%include ../shared/header2%>
-<div class="container eric-container-all" style=" text-align: center;">
-    <div class="eric-contanct-body animated fadeInRight">
-        <h1 class="eric-h1-reg">Eric's Small Blog</h1>
-         <%if(user){%>
-          <a class="btn eric-normal-btn" href="/blogs/add">Add a new Blog</a>
-          <%}%>
-            <table class="table table-striped table-hover">
-               <%for(let i=0; i< blogs.length;i++){%>
-                 <tr>
-                   <td><img class="eric-blog-cover" style=" " src="/images/<%=blogs[i].pic%>" ></td>
-                   <td> <a href="/blogs/blogdetails/<%= blogs[i]._id %>"><%=blogs[i].blogtitle%> </a></td>
-                   <td>Posted: <%= cds[i]%></td>
-                   <%if (user){%>
-                   <td>
-                      <a class="btn eric-info-btn" href="/blogs/edit/<%= blogs[i]._id %>">EDIT</a>
-                      <a class="btn eric-dg-btn" href="/blogs/delete/<%= blogs[i]._id%>"
-                       onclick="return confirm('Are you sure you want to delete this? ')">DELETE</a>
-                   </td>
-                   <%}%>
-                 </tr>
-               <%}%>
-            </table>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://eric-resume.herokuapp.com">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+    </ol>
+</nav>
+<div class="container">
+<div class="eric-card-container">
+    <%for(let i=0; i< blogs.length;i++){%>
+    <a href="/blogs/blogdetails/<%= blogs[i]._id %>">
+    <div class="eric-card-grid">
+       <div class="eric-card-layer"></div>
+        <div class="eric-card-content">
+            <div class="eric-card-title ">
+                <%= blogs[i].blogtitle%>
+            </div>
+            <div class="eric-card-image">
+                <img src="/images/<%=blogs[i].pic%>">
+
+            </div>
+            <div class="eric-card-details">
+
+                <p style="    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;"><%- blogs[i].blogcontent%></p>
+            </div>
+            <div class="eric-blog-date" >
+                Created: <%=cds[i]%>
+            </div>
+        </div>
     </div>
+    </a>
+    <%}%>
+</div>
 </div>
 <%include ../shared/footer%>
