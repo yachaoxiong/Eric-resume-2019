@@ -7,6 +7,12 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
+.nav-link{
+  color: white!important;
+}
+.nav-link:hover{
+  color: grey!important;
+}
 .breadcrumb{
   background: white!important;
 }
@@ -89,16 +95,30 @@ footer {
   background: transparent;
   border: 1px solid #dc3545;
 }
+.eric-h1-blog{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: left;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.eric-blog-body{
+
+
+  padding-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .eric-blog-p{
-  margin-left: 5%;
-  margin-right: 5%;
+
   text-align: left;
   line-height: 2;
   padding-top: 5%;
 }
 .eric-blog-subtitle{
-  margin-left: 5%;
-  margin-right: 5%;
+
   text-align: left;
   padding-top: 1%;
   color: #969696;

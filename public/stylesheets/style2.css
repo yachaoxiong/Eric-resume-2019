@@ -14,7 +14,7 @@ body{
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2.5rem;
-  background: #15d67c;
+  /*background: #15d67c;*/
   border-radius: 20px 20px 0px 0px;
   color: white;
   padding-top: 1%;
@@ -60,7 +60,7 @@ body{
   padding-top: 2%;
   padding-bottom: 5%;
 
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  /*box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);*/
 }
 .eric-contanct-body{
   border-radius: 20px;
@@ -241,9 +241,10 @@ ul{
 }
 .eric-card-title{
   color: black;
-  font-size: 2em;
+  font-size: 1.3em;
   line-height: 1;
   padding-bottom: 5%;
+  text-align: left;
 }
 .eric-card-details{
   height: 110px;
