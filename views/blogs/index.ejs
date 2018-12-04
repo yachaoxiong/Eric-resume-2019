@@ -11,10 +11,11 @@
     <%for(let i=0; i< blogs.length;i++){%>
     <a href="/blogs/blogdetails/<%= blogs[i]._id %>">
     <div class="eric-card-grid">
-       <div class="eric-card-layer"></div>
+
         <div class="eric-card-content">
 
             <div class="eric-card-image">
+                <div class="eric-card-layer"></div>
                 <img src="/images/<%=blogs[i].pic%>">
 
             </div>
