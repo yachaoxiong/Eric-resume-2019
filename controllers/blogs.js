@@ -50,7 +50,7 @@ router.get('/',(req,res,next)=>{
 
 });
 //get:/blog/test
-router.get('/',(req,res,next)=>{
+router.get('/test',(req,res,next)=>{
 
     //get blog documents form db
     Blog.find((err,blogs)=> {
