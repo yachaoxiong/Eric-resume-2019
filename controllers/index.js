@@ -15,13 +15,16 @@ router.get('/', (req, res, next)=> {
   });
 });
 /*get: about*/
-router.get('/about',(req,res,next)=>{
-  res.render('about',{
+router.get('/service',(req,res,next)=>{
+  res.render('service',{
    title:'About Car Tracker',
    message: 'This app is built with the MEAN Stack.',
       user:req.user
   });
 
+});
+router.get('/404', (req, res,next)=> {
+    res.send('what???', 404);
 });
 /*get:contact*/
 router.get('/contact',(req,res,next)=>{
