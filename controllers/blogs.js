@@ -1,9 +1,10 @@
 const express=require('express');
 const router=express.Router();
 const Blog= require('../models/blog');
+var fs= require('fs');
 let date = require('date-and-time');
 
-var multer = require('multer')
+var multer = require('multer');
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, './public/images/');
@@ -128,7 +129,7 @@ router.get('/add',(req,res,next)=>{
 });
 
 //post: /blogs/add
-router.post('/add',upload.single('pic'),(req,res) =>{
+router.post('/add',functions.isLoggedIn,upload.single('pic'),(req,res) =>{
     //use the blog model to save the new blogs
     Blog.create({
         blogtitle:req.body.blogtitle,
@@ -151,6 +152,16 @@ router.post('/add',upload.single('pic'),(req,res) =>{
 router.get('/delete/:_id',functions.isLoggedIn,(req,res,next)=>{
     //get the _id parameter from the url and store in a local variable
     let _id=req.params._id;
+    Blog.findById(_id,(err,blog)=>{
+
+       let filepath='./public/images/'+ blog.pic;
+       console.log(filepath);
+        fs.unlink(filepath, function (err) {
+            if (err) throw err;
+            // if no error, file has been deleted successfully
+            console.log('File deleted!');
+        });
+    });
 
     //use the blog model to delete the document with this id
     Blog.remove({_id:_id},(err)=>{
