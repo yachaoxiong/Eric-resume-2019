@@ -157,7 +157,7 @@ footer {
     padding-right:5%!important;
     padding-left:5%!important;
   }
-  .col-4{
+  .col-8,.col-4{
     flex: 0 0 100%!important;
     max-width: 100%!important;
   }

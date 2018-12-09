@@ -1,6 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
-//var favicon = require('serve-favicon');
+const favicon = require('express-favicon');
 var path = require('path');
 let date = require('date-and-time');
 
@@ -28,12 +28,14 @@ const makes=require('./controllers/makes');
 const blogs=require('./controllers/blogs');
 var app = express();
 
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //app.use( express.static( "public" ) );
-//app.use(favicon(path.join('Client','src',favicon.ico)));
+app.use(favicon(__dirname + '/public/favicon.png'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

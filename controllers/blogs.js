@@ -152,16 +152,6 @@ router.post('/add',functions.isLoggedIn,upload.single('pic'),(req,res,next) =>{
 router.get('/delete/:_id',functions.isLoggedIn,(req,res,next)=>{
     //get the _id parameter from the url and store in a local variable
     let _id=req.params._id;
-    Blog.findById(_id,(err,blog)=>{
-
-       let filepath='./public/images/'+ blog.pic;
-       console.log(filepath);
-        fs.unlink(filepath, function (err) {
-            if (err) throw err;
-            // if no error, file has been deleted successfully
-            console.log('File deleted!');
-        });
-    });
 
     //use the blog model to delete the document with this id
     Blog.remove({_id:_id},(err)=>{
