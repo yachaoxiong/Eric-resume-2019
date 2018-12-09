@@ -8,7 +8,7 @@
 <div class="container eric-container-all " style="text-align: center;">
     <div class="eric-contanct-body animated fadeIn ">
         <h1 class="eric-h1-reg">PULISH A BLOG</h1>
-            <form method="post" >
+            <form  method="post" enctype="multipart/form-data">
                 <fieldset class="form-group">
                     <label class="control-label col-md-2" for="blogtitle">Blogtitle: *</label>
                     <input class="eric-blog-input" name="blogtitle" id="blogtitle" required/>
@@ -21,10 +21,12 @@
                     <label class="control-label col-md-2"for="blogcontent">Blogcontent: *</label>
                     <textarea class="eric-blog-input" name="blogcontent" rows="5"id="blogcontent"></textarea>
                 </fieldset>
-                <fieldset class="form-group">
-                    <label class="control-label col-md-2" for="pic">Pic: *</label>
-                    <input class="eric-blog-input" name="pic" id="pic" required />
-                </fieldset>
+
+
+                    <input type="hidden" class="eric-blog-input" name="pic" id="pic" />
+
+                                    <input type="file" name="pic" />
+
             <button class="btn eric-normal-btn">Save</button>
         </form>
     </div>

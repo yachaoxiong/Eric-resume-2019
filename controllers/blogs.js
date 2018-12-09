@@ -1,9 +1,34 @@
-//references
 const express=require('express');
 const router=express.Router();
 const Blog= require('../models/blog');
 let date = require('date-and-time');
 
+var multer = require('multer')
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, './public/images/');
+    },
+    filename: function(req, file, cb) {
+        cb(null,  file.originalname);
+    }
+});
+
+const fileFilter = (req, file, cb) => {
+    // reject a file
+    if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
+        cb(null, true);
+    } else {
+        cb(null, false);
+    }
+};
+
+const upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024 * 1024 * 5
+    },
+    fileFilter: fileFilter
+});
 //access auth check method in our global functions file
 const functions=require('../config/functions');
 //get:/blog
@@ -93,7 +118,7 @@ router.get('/test',(req,res,next)=>{
 
 });
 //get:/ blogs/add
-router.get('/add',functions.isLoggedIn,(req,res,next)=>{
+router.get('/add',(req,res,next)=>{
     res.render('blogs/add',{
         title:'Add a New blogs',
         user:req.user
@@ -103,7 +128,7 @@ router.get('/add',functions.isLoggedIn,(req,res,next)=>{
 });
 
 //post: /blogs/add
-router.post('/add',functions.isLoggedIn,(req,res,next)=>{
+router.post('/add',upload.single('pic'),(req,res) =>{
     //use the blog model to save the new blogs
     Blog.create({
         blogtitle:req.body.blogtitle,
@@ -111,7 +136,7 @@ router.post('/add',functions.isLoggedIn,(req,res,next)=>{
         blogcontent:req.body.blogcontent,
         createAt:req.body.createAt,
         updateAt:req.body.updateAt,
-        pic:req.body.pic
+        pic:req.file.originalname
     },(err,blog)=>{
         if(err){
             console.log(err);
@@ -133,7 +158,7 @@ router.get('/delete/:_id',functions.isLoggedIn,(req,res,next)=>{
             console.log(err);
         }
         else{
-            res.redirect('/blogs');
+            res.redirect('/blogs/test');
         }
     });
 });
