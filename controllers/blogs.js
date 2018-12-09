@@ -119,7 +119,7 @@ router.get('/test',(req,res,next)=>{
 
 });
 //get:/ blogs/add
-router.get('/add',(req,res,next)=>{
+router.get('/add',functions.isLoggedIn,(req,res,next)=>{
     res.render('blogs/add',{
         title:'Add a New blogs',
         user:req.user
@@ -129,7 +129,7 @@ router.get('/add',(req,res,next)=>{
 });
 
 //post: /blogs/add
-router.post('/add',functions.isLoggedIn,upload.single('pic'),(req,res) =>{
+router.post('/add',functions.isLoggedIn,upload.single('pic'),(req,res,next) =>{
     //use the blog model to save the new blogs
     Blog.create({
         blogtitle:req.body.blogtitle,
