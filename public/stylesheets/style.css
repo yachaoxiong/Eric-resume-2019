@@ -17,7 +17,7 @@ body {
   background: white!important;
 }
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer here */
@@ -208,9 +208,9 @@ font-size: 13px;
 
 
 }
-.eric-container-all{
-  margin-bottom: 27%;
-}
+/*.eric-container-all{
+  margin-bottom: 2%!important;
+}*/
 .eric-footer-ul{
 
   position: absolute;
@@ -419,16 +419,16 @@ font-size: 13px;
 .service-card:hover{
   transform: scale(1.06);
 }
-.col-sm-4:nth-child(1) .service-card,
-.col-sm-4:nth-child(1) .service-card .service-card-title .fa{
+.eric-card-grid:nth-child(1) .service-card,
+.eric-card-grid:nth-child(1) .service-card .service-card-title .fa{
   background: linear-gradient(-45deg,#f403d1,#64b5f6);
 }
-.col-sm-4:nth-child(2) .service-card,
-.col-sm-4:nth-child(2) .service-card .service-card-title .fa{
+.eric-card-grid:nth-child(2) .service-card,
+.eric-card-grid:nth-child(2) .service-card .service-card-title .fa{
   background: linear-gradient(-45deg,#ffec61,#f321d7);
 }
-.col-sm-4:nth-child(3) .service-card,
-.col-sm-4:nth-child(3) .service-card .service-card-title .fa{
+.eric-card-grid:nth-child(3) .service-card,
+.eric-card-grid:nth-child(3) .service-card .service-card-title .fa{
   background: linear-gradient(-45deg,#24ff72,#9a4eff);
 }
 .service-card:before{
@@ -465,16 +465,8 @@ font-size: 13px;
   font-size: 2.2em;
   z-index: 2;
 }
-.service-card-price{
-  position: relative;
-  z-index: 2;
-}
-.service-card-price h4{
-  margin: 0;
 
-  color: white;
-  font-size: 3.9em;
-}
+
 .service-card-option{
   position: relative;
   z-index: 2;
