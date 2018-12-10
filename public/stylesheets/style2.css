@@ -224,10 +224,17 @@ ul{
     width:90%!important;
   }
 }
-@media screen and (max-width:1121px) and (min-width:819px){
+@media screen and (max-width:1121px) and (min-width:815px){
   .container-space{
     padding-bottom: 15%!important;
   }
+
+}
+@media screen and (max-width:751px) {
+  .service-card:hover{
+    transform: none!important;
+  }
+
 }
 
 /**********blog page *************/
