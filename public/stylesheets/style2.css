@@ -209,11 +209,22 @@ ul{
     border-radius: 0px 0px 20px 20px;
   }
 }
-@media(max-width:1380px){
+@media screen and (max-width:1380px) and (min-width:1000px){
   .container-80{
     width:70%!important;
   }
 }
+@media screen and (max-width:999px) and (min-width:900px){
+  .container-80{
+    width:80%!important;
+  }
+}
+@media screen and (max-width:899px) and (min-width:800px){
+  .container-80{
+    width:90%!important;
+  }
+}
+
 /**********blog page *************/
 .eric-card-container{
   display: grid;
