@@ -414,10 +414,10 @@ font-size: 13px;
   padding: 40px 20px;
   box-shadow: 0 10px 15px rgba(0,0,0,.2);
   transition: .5s;
-
+  overflow: hidden;
 }
 .service-card:hover{
-  transform: scale(1.06);
+  transform: scale(1.03);
 }
 .eric-card-grid:nth-child(1) .service-card,
 .eric-card-grid:nth-child(1) .service-card .service-card-title .fa{
