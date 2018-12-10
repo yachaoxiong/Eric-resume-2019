@@ -224,7 +224,7 @@ ul{
     width:90%!important;
   }
 }
-@media screen and (max-width:819px) and (min-width:1121px){
+@media screen and (max-width:1121px) and (min-width:819px){
   .container-space{
     padding-bottom: 15%!important;
   }
