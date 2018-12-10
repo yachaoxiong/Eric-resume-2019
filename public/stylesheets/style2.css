@@ -224,6 +224,11 @@ ul{
     width:90%!important;
   }
 }
+@media screen and (max-width:819px) and (min-width:1121px){
+  .container-space{
+    padding-bottom: 20%!important;
+  }
+}
 
 /**********blog page *************/
 .eric-card-container{
