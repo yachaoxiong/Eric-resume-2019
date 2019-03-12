@@ -52,7 +52,7 @@ router.post('/contact',(req,res,next)=> {
     var mailTransport= nodemailer.createTransport({
         service:'gmail',
 
-        secure:true,
+        host:'smtp.gmail.com',
         auth:{
             user:'ericxiongyachao@gmail.com ',
             pass:'qq55735285'
