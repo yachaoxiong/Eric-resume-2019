@@ -25,6 +25,7 @@ router.get('/', (req, res, next) => {
 router.get('/add', (req, res, next) => {
     res.render('makes/add', {
         title: 'Add a New Manufacturer',
+        err:'',
         user: req.user
     });
 });
@@ -38,7 +39,9 @@ router.post('/add', (req, res, next) => {
         year: req.body.year
     }, (err, make) => {
         if (err) {
-            console.log(err);
+           res.render('makes/add',{
+               err:'Name is already exited',
+               user:req.user})
         }
         else {
             res.redirect('/makes');

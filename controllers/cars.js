@@ -2,7 +2,7 @@
 const express=require('express');
 const router=express.Router();
 const Car= require('../models/car');
-
+const Make= require('../models/make');
 
 
 
@@ -16,6 +16,7 @@ router.get('/',(req,res,next)=>{
      if(err){
 
          console.log(err);
+
      }
      else{
          res.render('cars/index',{
@@ -30,11 +31,26 @@ router.get('/',(req,res,next)=>{
 });
 //get:/ cars/add
 router.get('/add',functions.isLoggedIn,(req,res,next)=>{
-    res.render('cars/add',{
+    Make.find((err, makes) => {
+        if (err) {
+
+            res.render('cars/add',{
+                err:err})
+        }
+        else {
+            res.render('cars/add', {
+                title: 'Manufacturer List',
+                makes: makes,
+                user: req.user
+            });
+        }
+    });
+
+  /*  res.render('cars/add',{
         title:'Add a New Car',
         user:req.user
 
-    });
+    });*/
 
 });
 
@@ -43,6 +59,7 @@ router.post('/add',functions.isLoggedIn,(req,res,next)=>{
    //use the car model to save the new cart
    Car.create({
        make:req.body.make,
+       makeId:req.body.makeId,
        model:req.body.model,
        year:req.body.year,
        color:req.body.color

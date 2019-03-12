@@ -5,6 +5,7 @@ var fs= require('fs');
 let date = require('date-and-time');
 
 var multer = require('multer');
+
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, './public/images/');
@@ -39,6 +40,7 @@ router.get('/',(req,res,next)=>{
     Blog.find((err,blogs)=> {
         //creat a variable and empty array
         let months = new Date();
+
         let uptime= new Date();
         let cds=[];
         let uds=[];
@@ -67,7 +69,7 @@ router.get('/',(req,res,next)=>{
 
                 user:req.user,
 
-                cds,
+                 cds,
                 uds
             })
         }
@@ -131,11 +133,14 @@ router.get('/add',functions.isLoggedIn,(req,res,next)=>{
 //post: /blogs/add
 router.post('/add',functions.isLoggedIn,upload.single('pic'),(req,res,next) =>{
     //use the blog model to save the new blogs
+    let createAt = new Date();
+
+
     Blog.create({
         blogtitle:req.body.blogtitle,
         subtitle:req.body.subtitle,
         blogcontent:req.body.blogcontent,
-        createAt:req.body.createAt,
+        createAt:createAt,
         updateAt:req.body.updateAt,
         pic:req.file.originalname
     },(err,blog)=>{

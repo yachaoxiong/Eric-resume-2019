@@ -3,7 +3,9 @@
 
     <div class="eric-contanct-body animated bounceInLeft ">
         <h1 class="eric-h1-reg">Manufacturers</h1>
-
+        <%if(err){%>
+        <h3><%=err%></h3>
+        <%}%>
 <form method="post" >
     <fieldset class="form-group">
         <label class="control-label col-md-2" for="name">Name: *</label>

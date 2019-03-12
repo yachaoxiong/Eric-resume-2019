@@ -8,17 +8,17 @@
 <h1 class="eric-h1-reg">REGISTER</h1>
 
 <form method="post">
-    <fieldset class="form-group">
+    <fieldset class="form-group" autocomplete="on">
         <label for="username" class="col-sm-2 control-label">Email: *</label>
-        <input name="username" id="username" required type="email" />
+        <input name="username" id="username" required autocomplete="off" type="email" />
     </fieldset>
-    <fieldset class="form-group">
+    <fieldset class="form-group" autocomplete="on">
         <label for="password" class="col-sm-2 control-label">Password: *</label>
-        <input name="password" id="password" type="password" required />
+        <input name="password" id="password" type="password"  autocomplete="off" required />
     </fieldset>
-    <fieldset class="form-group">
+    <fieldset class="form-group" autocomplete="on">
         <label for="confirm" class="col-sm-2 control-label">Confirm: *</label>
-        <input name="confirm" id="confirm" type="password" required />
+        <input name="confirm" id="confirm" type="password" autocomplete="off" required />
     </fieldset>
     <fieldset class="form-group">
         <label for="phone" class="col-sm-2 control-label">Phone: </label>

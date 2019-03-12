@@ -102,7 +102,16 @@ router.get('/register',(req,res,next)=>{
        user:req.user
     });
 });
+router.get('/users',(req,res,next)=>{
+    User.find((err,users)=>{
+        if(err){
 
+        }
+        else{
+            res.json(users)
+        }
+    })
+});
 //post: /register
 router.post('/register',(req,res,next)=>{
   User.register(new User({
