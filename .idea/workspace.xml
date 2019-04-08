@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="336dc799-2c0d-4c9d-ba44-57d52845ea49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="336dc799-2c0d-4c9d-ba44-57d52845ea49" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,59 +40,19 @@
       <file leaf-file-name="blogs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/blogs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="1170">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="back-cover.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/back-cover.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="blog2-gn.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/blog2-gn.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="education.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/education.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="icon-eric.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/icon-eric.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="bbv.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/bbv.jpg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            <state relative-caret-position="690">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-home-bg.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/main-home-bg.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="my-blog-bg.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/my-blog-bg.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="newlogo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/newlogo.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -193,9 +151,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
@@ -213,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,7 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,11 +277,12 @@
       <workItem from="1551200092841" duration="26000" />
       <workItem from="1552265853772" duration="5536000" />
       <workItem from="1552407212470" duration="3226000" />
+      <workItem from="1554691090423" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321748000" />
+    <option name="totallyTimeSpent" value="322015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,19 +294,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20508744" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20488574" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32868218" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32868218" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32868218" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.49147287" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17821011" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -366,21 +323,21 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19713831" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25271317" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -396,6 +353,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controllers/blogs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/programmer-wallpapers.htm" />
     <entry file="file://$PROJECT_DIR$/views/shared/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -632,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <element signature="e#323#350#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,56 +613,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/work.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/skills.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/newlogo-white.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/abtract.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/google.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/main-home-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/my-blog-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/newlogo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/blogs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        <state relative-caret-position="1170">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/back-cover.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/blog2-gn.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/education.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/icon-eric.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bbv.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="690">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
         </state>
       </provider>
     </entry>

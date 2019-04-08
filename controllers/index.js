@@ -50,14 +50,15 @@ router.post('/contact',(req,res,next)=> {
     <p>${req.body.message}</p>
   `;
     var mailTransport= nodemailer.createTransport({
-        port:25,
-        host:'mail.ericxiong.com',
-        secure:false,
+        service:'gmail',
+
+        host:'smtp.gmail.com',
         auth:{
-
-            user:'nodejs@ericxiong.com',
-            pass:'qq123123'
-
+            type: "OAuth2",
+            user:'ericxiongyachao@gmail.com',
+            clientId:'188051741598-7lfo42fio89cvcvdvkmh8k46f8ged1c7.apps.googleusercontent.com',
+            clientSecret:'ZolN8v3Vqiwn9HySjjvI7Wr4',
+            refreshToken:'1/PBMwuSrGxlwrbrw4kKwg8L503G4P18eBV52aA_5Y-B0'
 
         }
     });
