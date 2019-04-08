@@ -50,14 +50,16 @@ router.post('/contact',(req,res,next)=> {
     <p>${req.body.message}</p>
   `;
     var mailTransport= nodemailer.createTransport({
-        service:'gmail',
-
-        host:'smtp.gmail.com',
+        port:25,
+        host:'mail.ericxiong.com',
+        secure:false,
         auth:{
-            user:'ericxiongyachao@gmail.com ',
-            pass:'qq55735285'
-        }
 
+            user:'nodejs@ericxiong.com',
+            pass:'qq123123'
+
+
+        }
     });
 
     let mailOptions = {
