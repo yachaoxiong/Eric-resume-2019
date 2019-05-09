@@ -8,7 +8,7 @@ body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
 .nav-link{
-  color: white!important;
+  color: black!important;
 }
 .nav-link:hover{
   color: grey!important;
