@@ -201,6 +201,32 @@ ul{
     text-align: left;
   }
 }
+@media(min-width:992px){
+  .navbar-brand{
+    padding-left: 10%;
+  }
+}
+@media(min-width:1092px){
+  .navbar-brand{
+    padding-left: 15%;
+  }
+}
+@media(min-width:1192px){
+  .navbar-brand{
+    padding-left: 20%;
+  }
+}
+@media(min-width:1292px){
+  .navbar-brand{
+    padding-left: 25%;
+  }
+}
+@media(min-width:1392px){
+  .navbar-brand{
+    padding-left: 30%;
+  }
+}
+
 @media(max-width:700px){
   .company-info{
     border-radius: 20px 20px 0px 0px;
@@ -209,6 +235,7 @@ ul{
     border-radius: 0px 0px 20px 20px;
   }
 }
+
 @media screen and (max-width:1380px) and (min-width:1000px){
   .container-80{
     width:70%!important;
