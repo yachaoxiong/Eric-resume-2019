@@ -408,21 +408,22 @@ font-size: 13px;
 .skill-item-wrap{
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 0px 15px 0px;
   margin: 25px 0px;
   background: #f7f7f7;
   display: inline-flex;
   width: 100%;
   position: relative;
+  text-align: center;
 }
-.skill-item-icon{
-  height: 40px;
-  width: auto;
-  position: absolute;
-  right: 10px;
-  top: 25px;
-  padding: 2px;
-}
+/*.skill-item-icon{*/
+/*  height: 40px;*/
+/*  width: auto;*/
+/*  position: absolute;*/
+/*  right: 10px;*/
+/*  top: 25px;*/
+/*  padding: 2px;*/
+/*}*/
 .skill-item-wrap p{
   margin-bottom: 0px;
   margin-top: 10px;
