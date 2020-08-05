@@ -397,6 +397,24 @@ font-size: 13px;
 .eric-skill-p{
   color:#afabab;
 }
+.eric-skill-wrap{
+  display: inline-flex;
+  width: 100%;
+  padding-top: 10px;
+  border: 1px solid #afabab;
+  border-radius: 5px;
+}
+.skill-item-wrap{
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 25px 0px;
+  background: #f7f7f7;
+}
+.skill-item-wrap p{
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
 .eric-index-line{
   display: none;
 }
