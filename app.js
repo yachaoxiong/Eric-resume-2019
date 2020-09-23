@@ -43,7 +43,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //db connection
-mongoose.connect(config.db);
+mongoose.connect(config.db,{useNewUrlParser: true });
 
 
 

@@ -41,16 +41,7 @@
                 <a class="nav-link" href="/blogs">blogs</a>
             </li>
         </ul>
-        <ul class="navbar-nav">
-            <% if (user == undefined) { %>
-            <li class="nav-item"><a class="nav-link fa fa-user-circle" href="/register">Register</a></li>
-            <li class="nav-item"><a class="nav-link fa fa-arrow-right" href="/login">Login</a></li>
-            <% }
-            else { %>
-            <li class="nav item nav-link fa fa-user-circle"><%= user.username %></li>
-            <li class="nav-item"><a class="nav-link fa fa-arrow-right" href="/logout">Logout</a></li>
-            <% } %>
-        </ul>
+
     </div>
 
 </nav>
